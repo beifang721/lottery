@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>领取奖品</title>
+		<META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+		<META HTTP-EQUIV="expires" CONTENT="0">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/receivePrize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cityselect.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+	<body>
+		<div class="top_wrap">
+			<p><img class="prize_img" src="javascript:void(0)"/></p>
+			<p class="prize_name"></p>
+			<!--<p class="yes_collar"><img src="img/myprize/yescollar.png"/></p>-->
+		</div>
+		<div class="list-a">
+			<img class="person" align="absmiddle" src="img/receive/person.png"/> <span class="name_word">收货人</span> 
+			<input class="pub_input text_a" id="name_input" value=""></input>
+			<!--<input type="text" placeholder="请输入真实姓名" class="pub_input" id="name_input" value="" />-->
+		</div>
+		<div class="list-b">
+			<img class="person" align="absmiddle" src="img/receive/iphone-num.png"/> <span class="name_word">手机号</span> 
+			<input class="pub_input text_b" id="iphone_input" value=""></input>
+			<!--<input type="text" placeholder="11位手机号" class="pub_input" id="iphone_input" value="" />-->
+		</div>
+		<div class="iphone">
+			<div class="browser">
+		        <!--选择地区-->
+		        <section class="express-area">
+		            <a id="expressArea" href="javascript:void(0)">
+		                <dl>
+		                    <dt><img class="dingwei" align="absmiddle" src="img/receive/dingwei.png"/> 所在地区</dt>
+		                    <dd>省 > 市 > 区/县</dd>
+		                </dl>
+		            </a>
+		        </section>
+		        <!--选择地区弹层-->
+		        <section id="areaLayer" class="express-area-box">
+		            <header>
+		                <h3>选择地区</h3>
+		                <a id="backUp" class="back" href="javascript:void(0)" title="返回"></a>
+		                <a id="closeArea" class="close" href="javascript:void(0)" title="关闭"></a>
+		            </header>
+		            <article id="areaBox">
+		                <ul id="areaList" class="area-list"></ul>
+		            </article>
+		        </section>
+		        <!--遮罩层-->
+		        <div id="areaMask" class="mask"></div>
+		    </div>
+		</div>
+		<textarea id="myinput" class="detail_adress pub_input" name="" rows="" cols=""></textarea>
+	    <span class="confirm_btn absout">完成</span>
+		
+		<div class="mask_2"></div>
+		<div class="box-wrap">
+			<p>平台将尽快安排发货,</p>
+			<p>请注意查收!</p>
+			<p class="close"><img class="close-img" src="img/close-btn.png"/></p>
+		</div>
+		<div class="confirm">
+			<p class="confirm-p1">信息一经填写无法修改</p>
+			<p class="confirm-p2"></p>
+			<p class="confirm-p3"></p>
+			<span id="close_btn">取消</span><span id="suer_btn">确定</span>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			document.write("<s"+"cript type='text/javascript' src='js/public.js?t="+Math.random()+"'></scr"+"ipt>"); 
+			document.write("<s"+"cript type='text/javascript' src='js/jquery.area.js?t="+Math.random()+"'></scr"+"ipt>")
+			document.write("<s"+"cript type='text/javascript' src='js/receivePrize.js?t="+Math.random()+"'></scr"+"ipt>"); 
+		</script>
+	</body>
+</html>

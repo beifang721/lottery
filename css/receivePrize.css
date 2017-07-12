@@ -1,0 +1,192 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	width: 100%;
+	height: 100%;
+	background-color: #f3f6f8;
+}
+textarea,input {
+	box-shadow:0px 0px 0px rgba(0,0,0,0);
+    -webkit-appearance:none;
+    resize: none;  
+}
+.top_wrap {
+	background-color: #FFFFFF;
+	padding: 1.2rem;
+	border-bottom: 1px solid #e3e3e3;
+}
+.top_wrap p {
+	text-align: center;
+}
+.prize_img {
+	width: 4.8rem;
+}
+.prize_name {
+	font-size: .6rem;
+	padding: .03rem 0 .05rem 0;
+}
+.yes_collar img{
+	width: 1.0rem;
+}
+.list-a {
+	margin-top: .95rem;
+	border-top: 1px solid #E3E3E3;
+}
+.list-a,.list-b,.list-c,.list-d {
+	background-color: #FFFFFF;
+	padding: 0.9rem 0.0rem 0.9rem 0.5rem;
+	border-bottom: 1px solid #E3E3E3;
+}
+
+.person,.dingwei {
+	width:1.0rem;
+}
+
+.name_word {
+	display: inline-block;
+	font-size: .65rem;
+	color: #777;
+	position: relative;
+	/*top: -.016rem;*/
+}
+.pub_input {
+	margin-left: .85rem;
+	width: 11.0rem;
+	border-width: 0px;
+	font-size: .65rem;
+	position: relative;
+	top: 0.03rem;
+}
+#name_input,#iphone_input {
+	height:1rem;
+}
+.detail_adress {
+	width: 100%;
+	/*margin-top: 0rem;*/
+	padding:1.0rem 1.0rem 1.0rem 2.0rem;
+	font-size: .65rem;
+	border-bottom: 1px solid #E3E3E3;
+	top: 0;
+	margin-left: 0;
+}
+.absout {
+	position: absolute;
+}
+.confirm_btn {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	padding: .8rem 0;
+	background-color: #3177df;
+	font-size: .64rem;
+	bottom: 0;
+	left: 0;
+}
+/*屏幕高度不大于400px时  下面提交按钮隐藏*/
+@media (max-height: 400px) { 
+  .confirm_btn {
+    display: none;
+  }
+}
+/*蒙版*/
+.mask_2 {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.7);
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	display: none;
+}
+.box-wrap {
+	position: absolute;
+	width: 12.0rem;
+	height: 9.4rem;
+	background: url(../img/receive/receive-box.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 101;
+	top: 50%;
+	left: 50%;
+	margin-left: -6rem;
+	margin-top: -4.7rem;
+	display: none;
+}
+.box-wrap p {
+	text-align: center;
+	font-size: .7rem;
+	color: #333;
+}
+.box-wrap p:nth-child(1) {
+	padding-top: 5.2rem;
+}
+.close img{
+	width: 1.8rem;
+	margin-top: 2.5rem;
+}
+/*再次确认地址弹框*/
+.confirm {
+	position: absolute;
+	background-color: #FFFFFF;
+	top: 50%;
+	z-index: 101;
+	border-radius: 6px;
+	left: 50%;
+	margin-left: -7rem;
+	top: 50%;
+	display: none;
+	width: 14.0rem;
+}
+
+.confirm-p1{
+	text-align: center;
+	font-size: .9rem;
+	padding: .9rem 0rem .5rem 0rem;
+}
+.confirm-p2 {
+	font-size: .7rem;
+	color: #999;
+	text-align: center;
+}
+.confirm-p3 {
+	font-size: .7rem;
+	color: #999;
+	text-align: center;
+	padding-top: .3rem;
+	padding-bottom: 1.1rem;
+	width: 9.0rem;
+	margin: auto;
+}
+.confirm span {
+	display: inline-block;
+	width: 50%;
+	line-height: 2.5rem;
+	font-size: .8rem;
+	text-align: center;
+}
+#suer_btn {
+	background-color: #3177df;
+	color: #FFFFFF;
+	border-radius:0 0 5px 0;
+}
+#close_btn {
+	color: #999;
+}
+/*提示弹框*/
+.Box {
+	position: absolute;
+	color: #FFFFFF;
+	width: 10rem;
+	padding: .6rem 0rem;
+	font-size: .8rem;
+	background-color: rgba(0,0,0,.8);
+	text-align: center;
+	left: 50%;
+	bottom: 20%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	z-index: 1000;
+}

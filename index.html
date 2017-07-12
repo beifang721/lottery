@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>幸运抽奖</title>
+        <META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+		<META HTTP-EQUIV="expires" CONTENT="0"> 
+        <link rel="stylesheet" type="text/css" href="css/public.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+    	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    	<script type="text/javascript">
+    		document.write('<link rel="stylesheet" type="text/css" href="css/index.css?t='+Math.random()+'" />');
+    	</script>
+   		<script type="text/javascript" src="js/touch.min.js"></script>
+    	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+    </head>
+    <body>
+    	<div class="divimg">
+    		
+    	</div>
+        <div class="cover-div">
+        </div>
+        <div class="title-wrap">
+	        <div class="rules">
+            	<!--<span class="activityRule">注意事项</span>-->
+            	<!--<img class="activityRule" src="img/rule-btn.png" alt="" />-->
+       		</div>
+	       	<img class="title-img" src="img/title.png" alt="" />
+        </div>
+        <!--转盘-->
+        <div class="banner">
+            <div class="turnplate" style="background-image:url(img/roundpan.png);background-size:100% 100%;">
+            	<div class="container">
+                	<canvas class="item" id="wheelcanvas" width="844px" height="844px"></canvas>
+            	</div>
+                <img class="pointer" src="img/btn-img.png">
+            </div>
+           	<img class="zhu" src="img/zhu.png" alt="" />
+        </div>
+        <!--获奖结果-->
+        <!--<div class="result-div">
+            <img class="close-img" src="img/closeBtn.png">
+            </img>
+            <div>
+                <img class="honbao-img" src="img/hongbao.png">
+                </img>
+                <p class="addTxt">获得</p>
+            </div>
+            <div class="inviteBtn-div">
+                <img class="inviteBtn-img" src="img/inviteBtn.png">
+                </img>
+            </div>
+        </div>-->
+        <!--获奖结果-->
+        <div class="prize_result animated zoomIn">
+        	<p class="win_la">中奖啦~</p>
+        	<p class="win_prize">获得一台手机</p>
+        	<p class="win_pri_img"><img class="prize_img" src="img/boxprize/200.png"/></p>
+        	<p class="receive_btn"><img src="img/receive_btn.png"/></p>
+        	<p style="display: block;"><img class="close-img" src="img/close-btn.png"></p>
+        </div>
+        <p class="balance"><span>余额:</span> <span id="bk_num"></span> <span>贝壳</span></p>
+        <p class="free_lottery"><img src="img/free_coupon.png" alt="" /> X <span id="free_num"></span></p>
+        <div class="person_prizebtn">
+        	<p>
+        		<span>我的</span>
+        		<span>奖品</span>
+        	</p>
+        </div>
+        <div class="roller">
+        	<div class='list_wrap'>
+        		<!--<div class='list'>-->
+        			<!--<p>恭喜<span class="icon_wrap"></span><span class="roll_name">DF京东方</span></p>-->
+        		<!--</div>-->
+        	</div>
+        </div>
+        <div class="confirm animated zoomIn">
+			<p class="confirm-p1">您将消耗100贝壳</p>
+			<span id="close_btn">取消</span>&nbsp;&nbsp;&nbsp;<span id="suer_btn">确定</span>
+		</div>
+		<div class="confirm_chong animated zoomIn">
+			<p class="chong-p1" style="color: #FFFFFF;">抱歉，您没有可用的抽奖券!</p>
+			<span id="suer_chong">立即购买</span>
+			<p><img class="chong_close close-img" src="img/close-btn.png"></p>
+		</div>
+        <!--<p class="footer">本抽奖活动与苹果公司无关</p>-->
+    </body>
+
+	<script type="text/javascript" src="js/awardRotate.js?t=1.1"></script>
+	<script src="js/os.js"></script>
+	<script src="js/bridge.js"></script>
+	<script type="text/javascript">
+		document.write("<s"+"cript type='text/javascript' src='js/public.js?t="+Math.random()+"'></scr"+"ipt>"); 
+		document.write("<s"+"cript type='text/javascript' src='js/index.js?t="+Math.random()+"'></scr"+"ipt>");
+	</script>
+ 
+</html>
